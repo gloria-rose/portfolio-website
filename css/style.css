@@ -1,0 +1,91 @@
+/*
+Colors used:
+Primary color (light grey): #D3D3D3;
+Primary color (dark blue): #223C50;
+Secondary color (dark grey): #AFAFAF;
+Accent color (lime green): #CBF83E;
+Accent color (pink): #F66165;
+Accent color (lavender): #DDC7F7;
+*/
+
+body {
+    background-color: lightgrey;
+    font-family: 'Oxygen', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #505050;
+}
+
+h1, h2, h3 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: 'kameron', serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'dosis', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'kameron', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #f66165;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f66165;
+}
+
+a:hover,
+a:focus {
+    color: #be393d;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #902427;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f66165;
+    color: #ffffff;
+    font-family: 'kameron', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.2s opacity;
+}
+
+.button:visited {
+    color: #ffffff;  
+}
+
+.button:hover,
+.button:focus {
+    opacity: 0.7;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    opacity: 0.7;
+    text-decoration: none;
+}
