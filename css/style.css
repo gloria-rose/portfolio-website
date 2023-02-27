@@ -8,8 +8,21 @@ Accent color (pink): #F66165;
 Accent color (lavender): #DDC7F7;
 */
 
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #d3d3d3;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
 body {
-    background-color: lightgrey;
+    background-color: #F6F6F6;
     font-family: 'Oxygen', sans-serif;
     font-size:16px;
     font-weight: 400;
@@ -62,7 +75,7 @@ a:active {
     color: #902427;
 }
 
-.button {
+.button a{
     display: inline-block;
     background-color: #f66165;
     color: #ffffff;
@@ -74,18 +87,81 @@ a:active {
     transition: 0.2s opacity;
 }
 
-.button:visited {
+.button a:visited{
     color: #ffffff;  
 }
 
-.button:hover,
-.button:focus {
+.button a:hover,
+.button a:focus{
     opacity: 0.7;
     color: #ffffff;
     text-decoration: none;
 }
 
-.button:active {
+.button a:active{
     opacity: 0.7;
     text-decoration: none;
+}
+
+/* layout styling */
+
+#work_section .row {
+    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    font-weight: 400;
+    color: #f66165;
+}
+
+nav > ul > li > a:visited {
+    color: #f66165;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    color: #be393d;
+    text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+    color: #902427;
+}
+
+#hero_section {
+    background-color: #d3d3d3;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#hero_section h1 {
+    text-align: center;
+}
+
+main {
+    padding-top: 128px;
 }
