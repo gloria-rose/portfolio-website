@@ -8,52 +8,72 @@ Accent color (pink): #F66165;
 Accent color (lavender): #DDC7F7;
 */
 
+/* ============================ 
+general styling 
+================================*/
+
 * {
     box-sizing: border-box;
-}
-
-header {
-    background-color: #d3d3d3;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 body {
     background-color: #F6F6F6;
     font-family: 'Oxygen', sans-serif;
-    font-size:16px;
+    font-size:1.6rem;
     font-weight: 400;
     line-height: 1.6;
     color: #505050;
 }
 
+main {
+    padding-top: 120px;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+/* ============================ 
+font & link styling 
+================================*/
+
+html {
+    font-size: 62.5%; /*every rem equals 10px*/
+}
+
 h1, h2, h3 {
     line-height: 1.4;
+    margin-top: 0;
 }
 
 h1 {
     font-family: 'kameron', serif;
-    font-size: 1.5em;
+    font-size: 2.1rem; /* em would be relative to the body, use if you want to scale up proportionally. rem allows more control. */
     font-weight: 700;
 }
 
 h2 {
     font-family: 'dosis', sans-serif;
-    font-size: 1.4em;
+    font-size: 2.0rem;
     font-weight: 400;
 }
 
 h3 {
     font-family: 'kameron', serif;
-    font-size: 1.2em;
+    font-size: 1.8rem;
     font-weight: 700;
-}
-
-img {
-    width: 100%;
 }
 
 a {
@@ -75,12 +95,16 @@ a:active {
     color: #902427;
 }
 
+/* ============================ 
+button styling 
+================================*/
+
 .button a{
     display: inline-block;
     background-color: #f66165;
     color: #ffffff;
     font-family: 'kameron', serif;
-    font-size: 1.2em;
+    font-size: 1.8rem;
     font-weight: 700;
     padding: 10px;
     border-radius: 3px;
@@ -103,28 +127,60 @@ a:active {
     text-decoration: none;
 }
 
-/* layout styling */
-
-#work_section .row {
-    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+.button-box {
+    display: flex;
+    justify-content: space-around;
+    max-width: 38rem;
+    margin: 0 auto;
 }
 
-.container {
-    padding: 0 15px;
+#work_section .button {
+    text-align: center;
 }
 
-.row {
-    margin: 25px 0;
+#work_section .button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#about_section .button {
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+#balance_title_section .button-box {
+    margin-top: 25px;
+}
+
+#balance_credits_section .button {
+    text-align: center;
+}
+
+/* ============================ 
+header styling 
+================================*/
+
+header {
+    background-color: #223C50;
+    text-align: center;
+    padding: 10px 0 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .logo {
-    max-width: 50px;
+    max-width: 60px;
 }
 
+nav {
+    margin-top: 0.4em;    
+}
 
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav > ul > li {
@@ -134,26 +190,38 @@ nav > ul > li {
 nav > ul > li > a {
     padding: 0 15px;
     font-weight: 400;
-    color: #f66165;
+    color: #e4e4e4;
 }
 
 nav > ul > li > a:visited {
-    color: #f66165;
+    color: #e4e4e4;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-    color: #be393d;
+    color: #aeaeae;
     text-decoration: underline;
 }
 
 nav > ul > li > a:active {
-    color: #902427;
+    color: #7c7c7c;
 }
+
+.colorbar {
+    line-height: 1.2;
+}
+
+.colorbar img {   
+    vertical-align: bottom;    
+}
+
+/* ============================ 
+hero styling 
+================================*/
 
 #hero_section {
     background-color: #d3d3d3;
-    padding: 20px 0;
+   /* padding: 20px 0; */
     display: inline-block;
     width: 100%;
 }
@@ -162,6 +230,247 @@ nav > ul > li > a:active {
     text-align: center;
 }
 
-main {
-    padding-top: 128px;
+#hero_section span {
+    /*font-size: 80%; in relation to the parent */
+    color: #f66165;
+ }
+
+ /* ============================ 
+main styling 
+================================*/
+
+#work_section .row {
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a;
+    margin-top: 10px;
+}
+
+#work_section h3 {
+    text-align: center;  
+    margin-bottom: 0;  
+}
+
+#about-header_section {
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+
+#about_section {
+    padding-top: 0;
+}
+
+#about_section .column-lavender {
+    background-color: #DDC7F7;  
+    padding: 8px;
+}
+
+#balance_overview_section {
+    padding-bottom: 45px;
+}
+
+#balance_logo-design_section {
+    padding-top: 0;
+    padding-bottom: 45px;
+}
+
+#balance_logo-design_section .row {
+    display: flex;
+    justify-content:space-between;
+    margin: 0;
+}
+
+#balance_logo-design_section .column {
+    width: 48%;
+}
+
+#balance_color-design_section {
+    padding-top: 0;
+    padding-bottom: 45px;
+}
+
+#balance_typography_section {
+    padding-top: 0;
+    padding-bottom: 45px;
+}
+
+#balance_typography_section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#balance_typography_section .text-box_1 img {
+    width: 55%;
+}
+
+#balance_typography_section .text-box_2 img {
+    width: 14%;
+}
+
+#balance_typography_section .text-box_3 img {
+    width: 27%;
+}
+
+#balance_typography_section .text-box_4 img {
+    width: 90%;
+}
+
+#balance_user-flows_section {
+    padding-top: 0;
+    padding-bottom: 45px;
+}
+
+#balance_user-flows_section .image-box {
+    padding-top: 25px;
+}
+
+#balance_lowfi-wireframes_section {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+#balance_lowfi-wireframes_section .row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#balance_lowfi-wireframes_section .column {
+    display: inline-block;
+    width: 80%;
+}
+
+#balance_lowfi-wireframes_section p {
+    margin-top: 0;
+    text-align: center;
+}
+
+#balance_midfi-wireframes_section {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+#balance_midfi-wireframes_section .row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#balance_midfi-wireframes_section .column {
+    display: inline-block;
+    width: 80%;
+}
+
+#balance_midfi-wireframes_section p {
+    margin-top: 0;
+    text-align: center;
+}
+
+#balance_prototype-test_section {
+    padding-top: 0;
+    padding-bottom: 30;
+}
+
+#balance_prototype-test_section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+#balance_prototype-test_section .row p{
+    margin-top: 0;
+}
+
+#balance_final-screens_section {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+#balance_final-screens_section .image-box {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#balance_final-screens_section img {
+    display: inline-block;
+    width: 80%;
+}
+
+#balance_mockups_section {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+/* ============================ 
+footer styling 
+================================*/
+
+footer {
+    background-color: #223C50;
+    text-align: center;
+    padding: 10px 0 0;    
+    width: 100%; 
+    color: #e4e4e4;   
+}
+
+footer .container {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+footer span {
+    font-size: 60%
+}
+
+.social > ul {    
+    padding: 0;     
+}
+
+.social > ul > li {
+    display: inline-block;        
+    padding: 0 3px;
+    max-width: 60px;      
+}
+
+/* ============================ 
+@media styling 
+================================*/
+
+@media (min-width: 640px){
+    header {
+        text-align: unset;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    #work_section .row {
+        display: flex;
+        justify-content:space-between;
+    }
+
+    #work_section .column {
+        width: 48%;
+    }
+}
+
+@media (max-width: 359px) {
+    .button-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .button-box .button a {
+        min-width: 17rem;
+        text-align: center;
+    }
 }
