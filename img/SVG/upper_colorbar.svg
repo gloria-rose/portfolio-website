@@ -2,32 +2,27 @@
   <g id="upper_colorbar" transform="translate(0 -216)">
     <g id="Group_9" data-name="Group 9" transform="translate(0 216)">
       <g id="Group_1" data-name="Group 1">
-        <rect id="Rectangle_116" data-name="Rectangle 116" width="60" height="6" fill="#cbf83e"/>
+        <rect id="Rectangle_116" data-name="Rectangle 116" width="72" height="6" fill="#cbf83e"/>
       </g>
     </g>
-    <g id="Group_2567" data-name="Group 2567" transform="translate(60 216)">
-      <g id="Group_1-2" data-name="Group 1">
-        <rect id="Rectangle_116-2" data-name="Rectangle 116" width="60" height="6" fill="#d3d3d3"/>
+    <g id="Group_2567" data-name="Group 2567" transform="translate(71.741 216)">
+      <g id="Group_1-2" data-name="Group 1" transform="translate(0.259)">
+        <rect id="Rectangle_116-2" data-name="Rectangle 116" width="72" height="6" fill="#d3d3d3"/>
       </g>
     </g>
-    <g id="Group_2568" data-name="Group 2568" transform="translate(120 216)">
-      <g id="Group_1-3" data-name="Group 1">
-        <rect id="Rectangle_116-3" data-name="Rectangle 116" width="60" height="6" fill="#afafaf"/>
+    <g id="Group_2568" data-name="Group 2568" transform="translate(144.481 216)">
+      <g id="Group_1-3" data-name="Group 1" transform="translate(-0.481)">
+        <rect id="Rectangle_116-3" data-name="Rectangle 116" width="72" height="6" fill="#afafaf"/>
       </g>
     </g>
-    <g id="Group_2569" data-name="Group 2569" transform="translate(180 216)">
-      <g id="Group_1-4" data-name="Group 1">
-        <rect id="Rectangle_116-4" data-name="Rectangle 116" width="60" height="6" fill="#ddc7f7"/>
+    <g id="Group_2569" data-name="Group 2569" transform="translate(216.26 216)">
+      <g id="Group_1-4" data-name="Group 1" transform="translate(-0.26)">
+        <rect id="Rectangle_116-4" data-name="Rectangle 116" width="72" height="6" fill="#ddc7f7"/>
       </g>
     </g>
-    <g id="Group_2570" data-name="Group 2570" transform="translate(240 216)">
+    <g id="Group_2570" data-name="Group 2570" transform="translate(288 216)">
       <g id="Group_1-5" data-name="Group 1">
-        <rect id="Rectangle_116-5" data-name="Rectangle 116" width="60" height="6" fill="#f66165"/>
-      </g>
-    </g>
-    <g id="Group_2571" data-name="Group 2571" transform="translate(300 216)">
-      <g id="Group_1-6" data-name="Group 1">
-        <rect id="Rectangle_116-6" data-name="Rectangle 116" width="60" height="6" fill="#223c50"/>
+        <rect id="Rectangle_116-5" data-name="Rectangle 116" width="72" height="6" fill="#f66165"/>
       </g>
     </g>
   </g>
