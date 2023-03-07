@@ -146,6 +146,7 @@ button styling
 #about_section .button {
     margin-top: 25px;
     margin-bottom: 45px;
+    text-align: center;
 }
 
 #balance_title_section .button-box {
@@ -207,13 +208,16 @@ nav > ul > li > a:active {
     color: #7c7c7c;
 }
 
-.colorbar {
-    line-height: 1.2;
+header:after {
+    background: linear-gradient (to right, #CBF83E 100%, #d3d3d3 100%, #afafaf 100%, #DDC7F7 100%, #f66165 100%);
+    position: absolute;
+    content: '';
+    height: 6px;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
-.colorbar img {   
-    vertical-align: bottom;    
-}
 
 /* ============================ 
 hero styling 
@@ -259,9 +263,24 @@ main styling
     padding-top: 0;
 }
 
-#about_section .column-lavender {
-    background-color: #DDC7F7;  
+#about_section img {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#about_section .lavender {
+    background-color: #DDC7F7; 
+    width: 290px; 
     padding: 8px;
+}
+
+#balance_title_section img {
+    max-width: 560px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #balance_overview_section {
@@ -339,6 +358,7 @@ main styling
 #balance_lowfi-wireframes_section .column {
     display: inline-block;
     width: 80%;
+    max-width: 220px;
 }
 
 #balance_lowfi-wireframes_section p {
@@ -360,6 +380,7 @@ main styling
 #balance_midfi-wireframes_section .column {
     display: inline-block;
     width: 80%;
+    max-width: 220px;
 }
 
 #balance_midfi-wireframes_section p {
@@ -383,6 +404,14 @@ main styling
     margin-top: 0;
 }
 
+#balance_prototype-test_section .original {
+    max-width: 220px;
+}
+
+#balance_prototype-test_section .revised {
+    max-width: 280px;
+}
+
 #balance_final-screens_section {
     padding-top: 0;
     padding-bottom: 30px;
@@ -397,6 +426,7 @@ main styling
 #balance_final-screens_section img {
     display: inline-block;
     width: 80%;
+    max-width: 220px;
 }
 
 #balance_mockups_section {
@@ -432,12 +462,24 @@ footer span {
 .social > ul > li {
     display: inline-block;        
     padding: 0 3px;
-    max-width: 60px;      
+    width: 40px;      
 }
 
 /* ============================ 
 @media styling 
 ================================*/
+
+@media (max-width: 359px) {
+    .button-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .button-box .button a {
+        min-width: 17rem;
+        text-align: center;
+    }
+}
 
 @media (min-width: 640px){
     header {
@@ -453,24 +495,115 @@ footer span {
         padding-top: 60px;
     }
 
+    .container {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_title_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_overview_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_logo-design_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_color-design_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_typography_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_user-flows_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_lowfi-wireframes_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_midfi-wireframes_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_prototype-test_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_final-screens_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_mockups_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #balance_credits_section .container {
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #work_section .row {
         display: flex;
         justify-content:space-between;
     }
 
-    #work_section .column {
+    #work_section .col-md-6 {
         width: 48%;
+    }
+
+    #about_section .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about_section .col-md-7 {
+        width: 52%;
+    }
+
+    #about_section .col-md-5 {
+        width: 44%;
+    }
+
+    #about_section img {
+        margin-bottom: 50px;   
     }
 }
 
-@media (max-width: 359px) {
-    .button-box {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .button-box .button a {
-        min-width: 17rem;
-        text-align: center;
-    }
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1440px) {
+
 }
