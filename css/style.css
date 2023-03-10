@@ -62,18 +62,21 @@ h1 {
     font-family: 'kameron', serif;
     font-size: 2.1rem; /* em would be relative to the body, use if you want to scale up proportionally. rem allows more control. */
     font-weight: 700;
+    padding-top: 20px;
 }
 
 h2 {
     font-family: 'dosis', sans-serif;
     font-size: 2.0rem;
     font-weight: 400;
+    padding-top: 20px;
 }
 
 h3 {
     font-family: 'kameron', serif;
     font-size: 1.8rem;
     font-weight: 700;
+    padding-top: 20px;
 }
 
 a {
@@ -168,6 +171,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    z-index: 1; 
 }
 
 .logo {
@@ -225,7 +229,7 @@ hero styling
 
 #hero_section {
     background-color: #d3d3d3;
-   /* padding: 20px 0; */
+    padding: 40px 0;
     display: inline-block;
     width: 100%;
 }
@@ -263,6 +267,10 @@ main styling
     padding-top: 0;
 }
 
+#about-header_section h1 {
+    text-align: center;
+}
+
 #about_section img {
     max-width: 400px;
     display: block;
@@ -276,11 +284,19 @@ main styling
     padding: 8px;
 }
 
+#balance_title_section {
+    padding-top: 40px;
+}
+
+#balance_title_section h1 {
+    text-align: center;
+}
+
 #balance_title_section img {
     max-width: 560px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
 
 #balance_logo-design_section .row {
@@ -410,8 +426,7 @@ main styling
 
 #balance_credits_section {
     padding: 0;
-    position: relative;
-    z-index: -1; /* but using z-index to avoid the image overlapping my menu/navigation means that the button stops working */
+    position: relative;    
 }
 
 #balance_credits_section img {
