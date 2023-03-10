@@ -34,7 +34,7 @@ img {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
 }
 
 .container {
@@ -108,7 +108,7 @@ button styling
     font-weight: 700;
     padding: 10px;
     border-radius: 3px;
-    transition: 0.2s opacity;
+    transition: 0.4s opacity;
 }
 
 .button a:visited{
@@ -164,7 +164,7 @@ header styling
 header {
     background-color: #223C50;
     text-align: center;
-    padding: 10px 0 0;
+    padding: 10px 0 20px;
     position: fixed;
     width: 100%;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
@@ -209,7 +209,7 @@ nav > ul > li > a:active {
 }
 
 header:after {
-    background: linear-gradient (to right, #CBF83E 100%, #d3d3d3 100%, #afafaf 100%, #DDC7F7 100%, #f66165 100%);
+    background: linear-gradient(to right, #CBF83E 20%, #d3d3d3 20%, #d3d3d3 40%, #afafaf 40%, #afafaf 60%, #DDC7F7 60%, #DDC7F7 80%, #f66165 80%);
     position: absolute;
     content: '';
     height: 6px;
@@ -283,31 +283,20 @@ main styling
     margin-right: auto;
 }
 
-#balance_overview_section {
-    padding-bottom: 45px;
-}
-
-#balance_logo-design_section {
-    padding-top: 0;
-    padding-bottom: 45px;
-}
-
 #balance_logo-design_section .row {
     display: flex;
-    justify-content:space-between;
-    margin: 0;
+    justify-content: space-between;
+    /*    margin: 0;
+    flex-wrap: wrap; */
 }
 
-#balance_logo-design_section .column {
-    width: 48%;
+#rocks_4 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 #balance_color-design_section {
-    padding-top: 0;
-    padding-bottom: 45px;
-}
-
-#balance_typography_section {
     padding-top: 0;
     padding-bottom: 45px;
 }
@@ -335,18 +324,8 @@ main styling
     width: 90%;
 }
 
-#balance_user-flows_section {
-    padding-top: 0;
-    padding-bottom: 45px;
-}
-
 #balance_user-flows_section .image-box {
     padding-top: 25px;
-}
-
-#balance_lowfi-wireframes_section {
-    padding-top: 0;
-    padding-bottom: 30px;
 }
 
 #balance_lowfi-wireframes_section .row {
@@ -366,11 +345,6 @@ main styling
     text-align: center;
 }
 
-#balance_midfi-wireframes_section {
-    padding-top: 0;
-    padding-bottom: 30px;
-}
-
 #balance_midfi-wireframes_section .row {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -388,33 +362,26 @@ main styling
     text-align: center;
 }
 
-#balance_prototype-test_section {
-    padding-top: 0;
-    padding-bottom: 30;
+#balance_prototype-test_section .arrow {
+    max-width: 60px;
+}
+
+#balance_prototype-test_section .original {
+    max-width: 220px;
+    padding-right: 5px;
+}
+
+#balance_prototype-test_section .revised {
+    max-width: 280px;
+    padding-left: 5px;
 }
 
 #balance_prototype-test_section .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-}
-
-#balance_prototype-test_section .row p{
-    margin-top: 0;
-}
-
-#balance_prototype-test_section .original {
-    max-width: 220px;
-}
-
-#balance_prototype-test_section .revised {
-    max-width: 280px;
-}
-
-#balance_final-screens_section {
     padding-top: 0;
-    padding-bottom: 30px;
+    margin: 0;
 }
 
 #balance_final-screens_section .image-box {
@@ -430,9 +397,35 @@ main styling
 }
 
 #balance_mockups_section {
-    padding-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 0;  
 }
+
+#balance_mockups_section .container-fullscreen {
+    padding: 0;
+}
+
+#balance_mockups_section img {
+    vertical-align: bottom;
+}
+
+#balance_credits_section {
+    padding: 0;
+    position: relative;
+    z-index: -1; /* but using z-index to avoid the image overlapping my menu/navigation means that the button stops working */
+}
+
+#balance_credits_section img {
+    vertical-align: bottom;
+}
+
+#balance_credits_section .button {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 
 /* ============================ 
 footer styling 
@@ -481,6 +474,18 @@ footer span {
     }
 }
 
+@media (max-width: 639px){
+    #balance_logo-design_section .row {
+        flex-direction: column;        
+        gap: 20px;        
+    }
+
+    #balance_logo-design_section .column_1 {
+        padding-left: 8%;
+        padding-right: 8%;  
+    }
+}
+
 @media (min-width: 640px){
     header {
         text-align: unset;
@@ -489,14 +494,17 @@ footer span {
     header .container {
         display: flex;
         justify-content: space-between;
+        max-width: 1200px;
     }
 
     main {
-        padding-top: 60px;
+        padding-top: 89px;
     }
 
     .container {
         max-width: 950px;
+        padding-left: 4rem;
+        padding-right: 4rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -511,6 +519,14 @@ footer span {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #balance_logo-design_section .column_1 {
+        width: 64%;
+    }
+
+    #balance_logo-design_section .column_2 {
+        width: 32%;
     }
 
     #balance_logo-design_section .container {
@@ -531,6 +547,22 @@ footer span {
         margin-right: auto;
     }
 
+    #balance_typography_section .text-box_1 img {
+        width: 30%;
+    }
+    
+    #balance_typography_section .text-box_2 img {
+        width: 8%;
+    }
+    
+    #balance_typography_section .text-box_3 img {
+        width: 15%;
+    }
+    
+    #balance_typography_section .text-box_4 img {
+        width: 50%;
+    }
+
     #balance_user-flows_section .container {
         max-width: 760px;
         margin-left: auto;
@@ -542,11 +574,31 @@ footer span {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    #balance_lowfi-wireframes_section .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #balance_lowfi-wireframes_section .column {
+        width: 70%;
+        max-width: 220px;
+    }
 
     #balance_midfi-wireframes_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #balance_midfi-wireframes_section .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #balance_midfi-wireframes_section .column {
+        width: 70%;
+        max-width: 220px;
     }
 
     #balance_prototype-test_section .container {
@@ -559,6 +611,18 @@ footer span {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #balance_final-screens_section .image-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    
+    #balance_final-screens_section img {
+        width: 15%;
+        max-width: 100px;
     }
 
     #balance_mockups_section .container {
@@ -588,11 +652,11 @@ footer span {
     }
 
     #about_section .col-md-7 {
-        width: 52%;
+        width: 68%;
     }
 
     #about_section .col-md-5 {
-        width: 44%;
+        width: 28%;
     }
 
     #about_section img {
@@ -600,10 +664,125 @@ footer span {
     }
 }
 
-@media (min-width: 1024px) {
+/* ============================ 
+@keyframes animation styling for Balance logo
+================================*/
 
+#rock_1-3 {    
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation-duration: 3s;
+    animation-name: first-rock-shake;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
 }
 
-@media (min-width: 1440px) {
+@keyframes first-rock-shake{
+    0% {transform: rotate(0deg);}
+    35% {transform: rotate(-18deg);}
+    40% {transform: rotate(0deg);}
+    48% {transform: rotate(-5deg);}
+    55% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
 
+#rock_2-3 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-duration: 3s;
+    animation-name: second-rock-shake;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes second-rock-shake{
+    0% {transform: rotate(0deg);}
+    35% {transform: rotate(18deg);}
+    40% {transform: rotate(0deg);}
+    48% {transform: rotate(5deg);}
+    55% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#rock_3-3 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation-duration: 3s;
+    animation-name: third-rock-shake;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes third-rock-shake{
+    0% {transform: rotate(0deg);}
+    35% {transform: rotate(-18deg);}
+    40% {transform: rotate(0deg);}
+    48% {transform: rotate(-5deg);}
+    55% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#rock_4-3 {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation-duration: 3s;
+    animation-name: fourth-rock-shake;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes fourth-rock-shake{
+    0% {transform: rotate(0deg);}
+    35% {transform: rotate(18deg);}
+    40% {transform: rotate(0deg);}
+    48% {transform: rotate(5deg);}
+    55% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+
+
+/* ============================ 
+@keyframes animation styling for Berlin practice
+================================*/
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cloud-front {
+    animation-duration: 20s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cloud-back {
+    animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
 }
