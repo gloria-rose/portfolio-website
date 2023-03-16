@@ -26,7 +26,7 @@ body {
 }
 
 main {
-    padding-top: 108px;
+    padding-top: 78px;
 }
 
 img {
@@ -165,7 +165,7 @@ header styling
 
 header {
     background-color: #223C50;
-    text-align: center;
+    text-align: right;
     padding: 10px 0 20px;
     position: fixed;
     width: 100%;
@@ -174,18 +174,22 @@ header {
 }
 
 .logo {
-    max-width: 60px;   
+    max-width: 70px;   
     display: flex;
+    padding-left: 15px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
 }
 
 nav > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-nav > ul > li {
-    display: inline-block;
 }
 
 nav > ul > li > a {
@@ -205,6 +209,33 @@ nav > ul > li > a:focus {
 
 nav > ul > li > a:active {
     color: #7c7c7c;
+}
+
+.navtoggle li .icon {
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+.navtoggle li:not(:last-child){
+    display: none;
+  }
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(246, 97, 101, 1);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
 }
 
 header:after {
@@ -233,6 +264,10 @@ hero styling
 
 #hero_section .container {
     max-width: 500px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #hero_section span {
@@ -545,16 +580,20 @@ footer span {
         align-items: center;
     }
 
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
     main {
-        padding-top: 82px;
+        padding-top: 78px;
     }
 
     .container {
-        max-width: 950px;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 950px;        
     }
 
     #balance_title_section .container {
