@@ -179,12 +179,12 @@ header {
     padding-left: 15px;
 }
 
-header .container {
+/*header .container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     align-items: center;
-}
+}*/
 
 nav > ul {
     list-style-type: none;
@@ -214,11 +214,18 @@ nav > ul > li > a:active {
 .navtoggle li .icon {
     font-size: 25px;
     padding-right: 15px;
+    position: absolute;
+    right: 0;
+    top: 2px;
 }
 
 .navtoggle li:not(:last-child){
     display: none;
   }
+
+.navtoggle, navtoggle.responsive {
+    position: relative;
+}
 
 .navtoggle.responsive li {
     display: block;
@@ -573,7 +580,7 @@ footer span {
         text-align: unset;
     }
     
-    header .container {
+    header .navtoggle {
         display: flex;
         justify-content: space-between;
         max-width: 1200px;
@@ -593,7 +600,8 @@ footer span {
     }
 
     .container {
-        max-width: 950px;        
+        max-width: 950px;  
+        margin: 0 auto;      
     }
 
     #balance_title_section .container {
