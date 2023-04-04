@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>UI Design Project Balance</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400&family=Kameron:wght@700&family=Oxygen:wght@400&display=swap" rel="stylesheet">  
+        <script src="https://kit.fontawesome.com/f6f82bb8be.js" crossorigin="anonymous"></script>  
+    </head>
+
+    <body>
+        <header>
+            <div class="container">    
+                <div class="navtoggle" id="myNavtoggle">           
+                    <a href="index.html"><img src="img/SVG/logo.svg" alt="logo" class="logo"></a>                
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">My work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+                        </ul>
+                    </nav> 
+                </div>           
+            </div>                                          
+        </header>
+
+        <main>
+            <section id="nhmtours_title_section">
+                <div class="container">
+                    <h1>NHM Tours</h1>
+                    <div class="image-box">
+                        <picture>
+                            <source srcset="img/img_mobile/nhmtours/0_NHMTours_img.png" media="(max-width:767px)">
+                            <img src="img/img_desktop/nhmtours/0_NHMTours_img.png" alt="NHMTours Image">
+                        </picture>
+                    </div>
+                    <div class="button-box">
+                        <div class="button">
+                            <a href="files/casestudy_nhm.pdf">download PDF</a>
+                        </div>
+                        <div class="button">
+                            <a href="https://xd.adobe.com/view/17b55dda-e4f1-4887-ba00-3c75eaf6370a-42e6/">view prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nhmtours_overview_section">
+                <div class="container">
+                    <div class="image-box">
+                        <picture>
+                            <source srcset="img/img_mobile/nhmtours/img_40.jpg" media="(max-width:767px)">
+                            <img src="img/img_desktop/nhmtours/img_40.jpg" alt="Overview Image">
+                        </picture>
+                    </div>
+                    <div class="text-box">
+                        <h2>Overview</h2>
+                        <p>The NHM Tours app for mobile presents storylines through museum exhibits, engaging visitors in a new way. NHM Tours has an educational mission, providing additional interactive dimensions to museum experiences.</p>
+                        <p>The app is designed for museum visitors, guiding them through digital tours step-by-step. Users can choose between a number of digital tours, navigate the museum map and scan QR codes of exhibit items of interest.</p>                        
+                        <p>The main objectives of the NHM Tours Project included finding solutions how to present information in an interesting and captivating way, how to guide users through the museum towards specific exhibits and to create a barrier-free museum experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nhmtours_myrole_section">
+                <div class="container">                   
+                    <div class="image-box">
+                        <picture>
+                            <source srcset="img/img_mobile/nhmtours/img_2.jpg" media="(max-width:767px)">
+                            <img src="img/img_desktop/nhmtours/img_2.jpg" alt="My Role Image">
+                        </picture>
+                    </div>
+                    <div class="text-box">
+                        <h2>My Role</h2>
+                        <p>This case study allowed me to dive into the specifics for designing for iOS and for Android products. I also took the opportunity to gain some experience designing in dark mode. Within this project I also practiced my skills in animating with Adobe XD to improve the quality of my prototypes.</p>
+                        <h3>UX Design</h3>
+                        <p>Competitor analysis, user flows, understanding storyline content, wireframing (low, mid), understanding and application of Human Interface Guidelines and Material Design guidelines.</p>                        
+                        <h3>UI Design</h3>
+                        <p>Wireframing (mid, high, visual design, sound and physical feedback design, gestures & interactions, prototyping animations, user testing, mockups).</p>
+                    </div>                    
+                </div>
+            </section>
+
+            <section id="nhmtours_competitor-app_section">
+                <div class="container">
+                    <h2>Competitor Apps</h2>  
+                    <h3>Weltmuseum Wien</h3> 
+                    <div class="row">                                  
+                        <div class="column_1">
+                            <picture>
+                                <source srcset="img/img_mobile/nhmtours/img_3.jpg" media="(max-width:767px)">
+                                <img src="img/img_desktop/nhmtours/img_3.jpg" alt="Competitor App 1 Image">                         
+                            </picture>     
+                        </div>          
+                        <div class="column_2">                                                    
+                            <p>Exhibit screen with image of exhibit item, audio bar with pop up transcript and cards with additional information of interactive elements.</p>
+                        </div> 
+                    </div> 
+                    <h3>Rijksmuseum</h3>
+                    <div class="row">
+                        <div class="column_1">
+                            <picture>
+                                <source srcset="img/img_mobile/nhmtours/img_4.jpg" media="(max-width:767px)">
+                                <img src="img/img_desktop/nhmtours/img_4.jpg" alt="Competitor App 2 Image">                         
+                            </picture> 
+                        </div>
+                        <div class="column_2">
+                            <p>Tour overview screen with scrollable overview of exhibit items with room and audio nr. Visited exhibit items are marked.</p>
+                        </div>
+                    </div>
+                    <div class="row" id="competitor-screen">
+                        <div class="column_1">
+                            <picture>
+                                <source srcset="img/img_mobile/nhmtours/img_5.jpg" media="(max-width:767px)">
+                                <img src="img/img_desktop/nhmtours/img_5.jpg" alt="Competitor App 3 Image">                         
+                            </picture>   
+                        </div> 
+                        <div class="column_2">                                                                              
+                             <p>Museum map navigation to guide users to exhibit items on the tour using location data.</p>                             
+                        </div>             
+                    </div>
+                    <h3>KHM Stories</h3> 
+                    <div class="row">
+                        <div class="column_1">
+                            <picture>
+                                <source srcset="img/img_mobile/nhmtours/img_6.jpg" media="(max-width:767px)">
+                                <img src="img/img_desktop/nhmtours/img_6.jpg" alt="Competitor App 4 Image">                         
+                            </picture>   
+                        </div>   
+                        <div class="column_2">                                                   
+                            <p>Interactive screen with a minigame to engage users with the exhibit items.</p>
+                        </div>           
+                    </div>                                         
+                </div>
+            </section>
+
+            <section id="nhmtours_user-flows_section">
+                <div class="container">
+                    <h2>User flows</h2>
+                    <div class="text-box">
+                        <ul>
+                            <li>Users want to find appealing virtual tours for their museum visit</li>
+                            <li>Users want to have an overview of the tours and have the option to skip ahead</li>
+                            <li>Users want to be able to interact with exhibits in an engaging way </li>
+                            <li>Users want to find more Information on exhibit pieces which interest them</li>
+                            <li>Users want to have a quick orientation through the museum exhibit halls</li>
+                        </ul>
+                    </div>
+                    <div class="image-box">
+                        <picture>
+                            <source srcset="img/img_mobile/nhmtours/img_7.png" media="(max-width:767px)">
+                            <img src="img/img_desktop/nhmtours/img_7.png" alt="User Flows Image">                         
+                        </picture>                 
+                    </div>
+                </div>
+            </section>
+
+            <section id="nhmtours_midfi-wireframes_section">
+                <div class="container">
+                    <h2>Mid-fi Wireframes</h2>                    
+                    <div class="row">                        
+                        <div class="column">                            
+                            <img src="img/img_desktop/nhmtours/img_8.jpg" alt="Home Image">
+                            <p>home (tours)</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_9.jpg" alt="Tour Overview Image">
+                            <p>tour overview</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_10.jpg" alt="Guide to Exhibit Image">
+                            <p>guide to exhibit</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_11.jpg" alt="Exhibit Item Image">
+                            <p>exhibit item</p>
+                        </div>
+                    </div>
+                </div>           
+            
+                <div class="container">                     
+                    <h3>iPhone 14 Pro</h3>                  
+                    <div class="row">                        
+                        <div class="column">                            
+                            <img src="img/img_desktop/nhmtours/img_12.jpg" alt="Home 2 Image">
+                            <p>home (tours)</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_13.jpg" alt="Tour Overview 2 Image">
+                            <p>tour overview</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_14.jpg" alt="Guide to Exhibit 2 Image">
+                            <p>guide to exhibit</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_15.jpg" alt="Exhibit Item 2 Image">
+                            <p>exhibit item</p>
+                        </div>
+                    </div>
+                    <h3>Android S10</h3>                  
+                    <div class="row">                        
+                        <div class="column">                            
+                            <img src="img/img_desktop/nhmtours/img_16.jpg" alt="Home 3 Image">
+                            <p>home (tours)</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_17.jpg" alt="Tour Overview 3 Image">
+                            <p>tour overview</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_18.jpg" alt="Guide to Exhibit 3 Image">
+                            <p>guide to exhibit</p>
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_19.jpg" alt="Exhibit Item 3 Image">
+                            <p>exhibit item</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nhmtours_background-research_section">
+                <div class="container">                   
+                    <div class="image-box">
+                        <picture>
+                            <source srcset="img/img_mobile/nhmtours/img_20.jpg" media="(max-width:767px)">
+                            <img src="img/img_desktop/nhmtours/img_20.jpg" alt="Background Research Image">
+                        </picture>
+                    </div>
+                    <div class="text-box">
+                        <h2>Background Research</h2>                        
+                        <p>In order to design a comprehensive and engaging tour, research was done on the material to be featured, including the museum layout, the exhibits and the storyline of the tour.</p>                        
+                    </div>                    
+                </div>
+            </section>
+
+            <section id="nhmtours_mobile-gestures_section">
+                <div class="container">
+                    <h2>Mobile Gestures (iPhone 14 Pro)</h2>
+                    <h3>Home (tours)</h3>                                       
+                    <div class="row">                                                
+                        <div class="column">                            
+                            <img src="img/img_desktop/nhmtours/img_21.jpg" alt="Gestures Home 1 Image">
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_22.jpg" alt="Gestures Home 2 Image">                            
+                        </div>                        
+                    </div>
+                    <p>On the home page you can swipe through the available tours to the left and right in a carousel.</p>
+                    <h3>Overview page</h3>
+                    <div class="row">                                           
+                        <div class="column">                            
+                            <img src="img/img_desktop/nhmtours/img_23.jpg" alt="Gestures Overview 1 Image">
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_24.jpg" alt="Gestures Overview 2 Image">                            
+                        </div>                        
+                    </div>
+                    <p>On the overview tour screen you can tap the start button to start the tour from the beginning, or the individual exhibit images to navigate to the specific exhibit page. By swiping up and down you can scroll through the list of exhibit items.</p>
+                    <h3>Exhibit tour</h3>
+                    <div class="row">                                             
+                        <div class="column">                            
+                            <img src="img/img_desktop/nhmtours/img_25.jpg" alt="Gestures Exhibit 1 Image">
+                        </div>
+                        <div class="column">
+                            <img src="img/img_desktop/nhmtours/img_26.jpg" alt="Gestures Exhibit 2 Image">                            
+                        </div>                        
+                    </div>    
+                    <p>On the exhibit page you can swipe up and down to scroll through the page. Several buttons can be tapped to activate them, such as the audio controls and the transcript button. You can swipe left and right to move the audio marker along the track to rewind or fast forward.</p>                
+                </div>
+            </section>
+
+            <section id="nhmtours_prototype-testing_section">
+                <div class="container">
+                    <h2>Prototype testing</h2>
+                    <div class="text-box">
+                        <p>3 user tests for iOS, 2 user tests for Android</p>
+                        <ul>
+                            <li>Spacing of map titles has been improved (iOS)</li>
+                            <li>Card appearance was adapted for maps (iOS & Android)</li>
+                            <li>Duplicate texts have been removed (Android)</li>
+                            <li>Checkmarks turn to x when clicked (Android)</li>
+                            <li>A logo was added in the Header to link back to the start page (iOS & Android)</li>
+                            <li>"Tours" has been renamed to "Home" in the hamburger menu (Android)</li>
+                            <li>The button "Guide" has been renamed "Map Guide" (iOS & Android)</li>
+                            <li>"Featured" has been renamed to "Featured tour" (iOS & Android)</li>
+                            <li>The tops of cards were made visible to indicate scrolling (iOS & Android)</li>
+                        </ul>
+                    </div>                    
+                </div>
+            </section>        
+
+            <section id="nhmtours_mockups_section">
+                <div class="container">  
+                    <h2>Final showcase (Mockups)</h2>                        
+                    <h3>iPhone 14 Pro</h3>
+                    <div class="image-box">
+                        <img src="img/img_mobile/nhmtours/img_35.jpg" alt="Splash Screen Image">
+                        <img src="img/img_mobile/nhmtours/img_36.jpg" alt="Home Image">
+                        <img src="img/img_mobile/nhmtours/img_37.jpg" alt="Tour Overview Image">
+                        <img src="img/img_mobile/nhmtours/img_38.jpg" alt="Guide Image">
+                        <img src="img/img_mobile/nhmtours/img_39.jpg" alt="Exhibition Image">                      
+                    </div>
+                    <h3>Android S10</h3>
+                    <div class="image-box">                      
+                        <img src="img/img_mobile/nhmtours/img_30.jpg" alt="Splash Screen Image">
+                        <img src="img/img_mobile/nhmtours/img_31.jpg" alt="Home Image">
+                        <img src="img/img_mobile/nhmtours/img_32.jpg" alt="Tour Overview Image">
+                        <img src="img/img_mobile/nhmtours/img_33.jpg" alt="Guide Image">
+                        <img src="img/img_mobile/nhmtours/img_34.jpg" alt="Exhibition Image">                        
+                    </div>                                                       
+                </div>
+            </section>      
+            
+            <section id="nhmtours_mockups-museum_section">                
+                <div class="container-fullscreen">
+                    <picture>
+                        <source srcset="img/img_mobile/nhmtours/img_29.jpg" media="(max-width:767px)">
+                        <img src="img/img_desktop/nhmtours/img_29.jpg" alt="Mockups Museum Image">
+                    </picture>
+                </div>
+            </section>
+
+            <section id="nhmtours_disclaimer_section">
+                <div class="container">
+                    <h2>Disclaimer</h2>
+                    <p>This project is a hypothetical practice design in context of a UI design course.</p>
+                    <p>The Naturhistorisches Museum Wien (NHM) had no knowledge of or involvement with this project.</p>
+                    <p>Depicted exhibits are part of collections from various different museums (see credits) and are not all part of the NHM collection.</p>                
+                </div>
+            </section>
+
+            <section id="nhmtours_credits_section">
+                <div class="container">
+                    <div class="button">
+                        <a href="files/credits_nhmtours.pdf">image credits</a>
+                    </div>               
+                </div>               
+            </section>
+
+        </main>
+
+        <footer id="contact">
+            <div class="container">
+                <h2>Let's connect!</h2>
+                <p>Are you interested in working with me? Just reach out with an e-mail using the button below.</p>
+                <div class="button">
+                    <a href="mailto:gloria.rose@gmx.at">send email</a>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="index.html"><img src="img/SVG/linkedin.svg" target="_blank">                            
+                        </a></li>
+                        
+                        <li><a href="index.html"><img src="img/SVG/behance.svg" target="_blank">                            
+                        </a></li>
+                    </ul>
+                </div>
+                <p><span>Copyright Gloria Rose 2023</span></p>
+            </div>
+        </footer>
+        
+        <script
+			  src="https://code.jquery.com/jquery-3.6.4.min.js"
+			  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+			  crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        
+    </body>
+</html>
