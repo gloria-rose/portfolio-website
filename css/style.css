@@ -56,25 +56,26 @@ html {
 h1, h2, h3 {
     line-height: 1.4;
     margin-top: 0;
+    padding-top: 8rem;
 }
 
 h1 {
-    font-family: 'kameron', serif;
-    font-size: 2.1rem; /* em would be relative to the body, use if you want to scale up proportionally. rem allows more control. */
+    font-family: 'oswald', sans-serif;
+    font-size: 5.8rem; /* em would be relative to the body, use if you want to scale up proportionally. rem allows more control. */
     font-weight: 700;
     padding-top: 20px;
 }
 
 h2 {
-    font-family: 'dosis', sans-serif;
-    font-size: 2.0rem;
-    font-weight: 400;    
+    font-family: 'oswald', sans-serif;
+    font-size: 3.4rem;
+    font-weight: 700;    
 }
 
 h3 {
-    font-family: 'kameron', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'oswald', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 400;
     padding-top: 20px;
 }
 
@@ -104,9 +105,9 @@ button styling
     display: inline-block;
     background-color: #f66165;
     color: #ffffff;
-    font-family: 'kameron', serif;
+    font-family: 'oswald', sans-serif;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 400;
     padding: 10px;
     border-radius: 3px;
     transition: 0.4s opacity;
@@ -276,8 +277,7 @@ hero styling
     text-align: center;
 }
 
-#hero_section .container {
-    max-width: 500px;
+#hero_section .container {    
     padding-left: 4rem;
     padding-right: 4rem;
     margin-left: auto;
@@ -304,8 +304,7 @@ main styling
     border-bottom: none;
 }
 
-#work_section h2 {
-    padding-top: 4rem;
+#work_section h2 {    
     text-align: center;
 }
 
@@ -322,6 +321,10 @@ main styling
 
 #about_section {
     padding-top: 0;
+}
+
+#about_section h2 {
+    padding-top: 2.7rem;
 }
 
 #about-header_section h1 {
@@ -359,8 +362,8 @@ balance main styling
     margin-right: auto;    
 }
 
-#balance_overview_section h2 {
-    padding-top: 30px;
+#balance_overview_section .container {
+    padding-bottom: 8rem;
 }
 
 #balance_overview_section img {
@@ -383,12 +386,15 @@ balance main styling
 }
 
 #balance_color-design_section {
-    padding-top: 0;
-    padding-bottom: 45px;
+    padding-top: 0;    
 }
 
-#balance_typography_section h2 {
-    padding-top: 30px;
+#balance_color-design_section .container {
+    padding-bottom: 8rem;
+}
+
+#balance_typography_section .container {
+    padding-bottom: 8rem;
 }
 
 #balance_typography_section .row {
@@ -423,10 +429,6 @@ balance main styling
 
 #balance_typography_section .text-box_4 img {
     width: 55%;
-}
-
-#balance_user-flows_section h2 {
-    padding-top: 30px;
 }
 
 #balance_user-flows_section .image-box {
@@ -503,6 +505,10 @@ balance main styling
     margin: 0;
 }
 
+#balance_final-screens_section .container {
+    padding-bottom: 8rem;
+}
+
 #balance_final-screens_section .image-box {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -515,15 +521,15 @@ balance main styling
     max-width: 220px;
 }
 
-#balance_mockups_section {
+#balance_img-fullscreen_section {
     padding-bottom: 0;  
 }
 
-#balance_mockups_section .container-fullscreen {
+#balance_img-fullscreen_section .container-fullscreen {
     padding: 0;
 }
 
-#balance_mockups_section img {
+#balance_img-fullscreen_section img {
     vertical-align: bottom;
 }
 
@@ -563,16 +569,8 @@ nhmtours main styling
     margin-right: auto;    
 }
 
-#nhmtours_overview_section h2 {
-    padding-top: 30px;
-}
-
 #nhmtours_overview_section img {
     vertical-align: bottom;
-}
-
-#nhmtours_myrole_section h2 {
-    padding-top: 30px;
 }
 
 #nhmtours_myrole_section img {
@@ -626,10 +624,6 @@ nhmtours main styling
     text-align: center;
 }
 
-#nhmtours_background-research_section h2 {
-    padding-top: 30px;
-}
-
 #nhmtours_mobile-gestures_section h2 {
     margin-bottom: 0;    
 }
@@ -675,10 +669,6 @@ nhmtours main styling
 
 #nhmtours_mockups-museum_section img {
     vertical-align: bottom;
-}
-
-#nhmtours_disclaimer_section h2 {
-    padding-top: 30px;
 }
 
 /* ============================ 
@@ -812,9 +802,6 @@ footer span {
         width: 40%;
     }
 
-    #about_section img {
-        margin-bottom: 50px;   
-    }
 
 /* ============================ 
 balance styling 
@@ -941,11 +928,11 @@ balance styling
     }
     
     #balance_final-screens_section img {
-        width: 15%;
-        max-width: 100px;
+        width: 35%;
+        max-width: 180px;
     }
 
-    #balance_mockups_section .container {
+    #balance_img-fullscreen_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
