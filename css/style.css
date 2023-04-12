@@ -521,7 +521,15 @@ balance main styling
     max-width: 220px;
 }
 
-#balance_img-fullscreen_section {
+#balance_img-fullscreen_section_1 {
+    padding-bottom: 0;  
+}
+
+#balance_img-fullscreen_section_2 {
+    padding-bottom: 0;  
+}
+
+#balance_img-fullscreen_section_3 {
     padding-bottom: 0;  
 }
 
