@@ -19,7 +19,7 @@ general styling
 body {
     background-color: #F6F6F6;
     font-family: 'Oxygen', sans-serif;
-    font-size:1.6rem;
+    font-size:1.8rem;
     font-weight: 400;
     line-height: 1.6;
     color: #505050;
@@ -51,6 +51,7 @@ font & link styling
 
 html {
     font-size: 62.5%; /*every rem equals 10px*/
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -145,8 +146,8 @@ button styling
 }
 
 #about_section .button {
-    margin-top: 25px;
-    margin-bottom: 45px;
+    margin-top: 65px;
+    margin-bottom: 65px;
     text-align: center;
 }
 
@@ -208,8 +209,9 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    padding: 0 15px;
+    padding: 10px 15px;
     font-weight: 400;
+    display: block;
     color: #e4e4e4;
 }
 
@@ -231,7 +233,7 @@ nav > ul > li > a:active {
     padding-right: 15px;
     position: absolute;
     right: 0;
-    top: 2px;
+    top: -3px;
 }
 
 .navtoggle li:not(:last-child){
@@ -252,7 +254,7 @@ nav > ul > li > a:active {
 
 .navtoggle.responsive li {
     display: block;
-    padding: 10px 0;
+    padding: 0;
     border-top: 1px solid rgba(246, 97, 101, 1);
 }
 
@@ -370,12 +372,22 @@ balance main styling
     padding-top: 4rem;
 }
 
-#balance_overview_section img {
-    vertical-align: bottom;
+#balance_overview_section img {    
+    max-width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #balance_logo-design_section h2 {
     padding-top: 4rem;
+}
+
+#balance_logo-design_section .container-fullscreen img {
+    max-width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #balance_logo-design_section .row {
@@ -406,6 +418,13 @@ balance main styling
 
 #balance_typography_section h2 {
     padding-top: 4rem;
+}
+
+#balance_typography_section .container-fullscreen img {
+    max-width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #balance_typography_section .row {
@@ -444,6 +463,13 @@ balance main styling
 
 #balance_user-flows_section h2 {
     padding-top: 4rem;
+}
+
+#balance_user-flows_section .container-fullscreen img {
+    max-width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #balance_user-flows_section .image-box {
@@ -500,6 +526,10 @@ balance main styling
 #balance_midfi-wireframes_section p {
     margin-top: 0;
     text-align: center;
+}
+
+#balance_midfi-wireframes_section img {
+    border-radius: 30px;
 }
 
 #balance_prototype-test_section h2 {
@@ -578,7 +608,11 @@ balance main styling
 }
 
 #balance_credits_section img {
-    vertical-align: bottom;
+      
+    max-width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #balance_credits_section .button {
@@ -934,6 +968,10 @@ footer span {
 
 @media (min-width: 640px){
     
+    body {        
+        font-size:2.1rem;        
+    }
+
     .button a{        
         font-size: 2.2rem;        
     }
@@ -980,6 +1018,11 @@ footer span {
     .container {
         max-width: 950px;  
         margin: 0 auto;      
+    }
+
+    #hero_section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
     #hero_section p {
