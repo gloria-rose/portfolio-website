@@ -55,28 +55,27 @@ html {
 
 h1, h2, h3 {
     line-height: 1.4;
-    margin-top: 0;
-    padding-top: 8rem;
+    margin-top: 0;    
 }
 
 h1 {
     font-family: 'oswald', sans-serif;
-    font-size: 5.8rem; /* em would be relative to the body, use if you want to scale up proportionally. rem allows more control. */
+    font-size: 3.8rem; /* em would be relative to the body, use if you want to scale up proportionally. rem allows more control. */
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 0rem;
 }
 
 h2 {
     font-family: 'oswald', sans-serif;
-    font-size: 3.4rem;
+    font-size: 2.8rem;
     font-weight: 700;    
 }
 
 h3 {
     font-family: 'oswald', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 400;
-    padding-top: 20px;
+    padding-top: 0rem;
 }
 
 a {
@@ -156,6 +155,14 @@ button styling
 }
 
 #balance_credits_section .button {
+    text-align: center;
+}
+
+#nhmtours_title_section .button-box {
+    margin-top: 25px;
+}
+
+#nhmtours_credits_section .button {
     text-align: center;
 }
 
@@ -306,6 +313,7 @@ main styling
 
 #work_section h2 {    
     text-align: center;
+    padding-top: 4rem;
 }
 
 #work_section h3 {
@@ -321,10 +329,6 @@ main styling
 
 #about_section {
     padding-top: 0;
-}
-
-#about_section h2 {
-    padding-top: 2.7rem;
 }
 
 #about-header_section h1 {
@@ -362,12 +366,16 @@ balance main styling
     margin-right: auto;    
 }
 
-#balance_overview_section .container {
-    padding-bottom: 8rem;
+#balance_overview_section h2 {
+    padding-top: 4rem;
 }
 
 #balance_overview_section img {
     vertical-align: bottom;
+}
+
+#balance_logo-design_section h2 {
+    padding-top: 4rem;
 }
 
 #balance_logo-design_section .row {
@@ -377,6 +385,13 @@ balance main styling
     margin-top: 0;
     /*    margin: 0;
     flex-wrap: wrap; */
+}
+
+#balance_logo-design_section .column_1 img {
+    max-width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #rocks_4 {
@@ -389,12 +404,8 @@ balance main styling
     padding-top: 0;    
 }
 
-#balance_color-design_section .container {
-    padding-bottom: 8rem;
-}
-
-#balance_typography_section .container {
-    padding-bottom: 8rem;
+#balance_typography_section h2 {
+    padding-top: 4rem;
 }
 
 #balance_typography_section .row {
@@ -431,12 +442,20 @@ balance main styling
     width: 55%;
 }
 
+#balance_user-flows_section h2 {
+    padding-top: 4rem;
+}
+
 #balance_user-flows_section .image-box {
     padding-top: 25px;
 }
 
 #balance_lowfi-wireframes_section h2 {
     margin-bottom: 0;
+}
+
+#balance_lowfi-wireframes_section h3 {
+    margin-top: 2rem;
 }
 
 #balance_lowfi-wireframes_section .row {
@@ -461,6 +480,10 @@ balance main styling
     margin-bottom: 0;
 }
 
+#balance_midfi-wireframes_section h3 {
+    padding-top: 2rem;
+}
+
 #balance_midfi-wireframes_section .row {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -483,6 +506,10 @@ balance main styling
     margin-bottom: 0;
 }
 
+#balance_prototype-test_section h3 {
+    margin-top: 2rem;
+}
+
 #balance_prototype-test_section .arrow {
     max-width: 60px;
 }
@@ -503,6 +530,10 @@ balance main styling
     align-items: center;
     padding-top: 0;
     margin: 0;
+}
+
+#balance_final-screens_section {
+    padding-bottom: 0rem;
 }
 
 #balance_final-screens_section .container {
@@ -577,41 +608,116 @@ nhmtours main styling
     margin-right: auto;    
 }
 
+#nhmtours_overview_section h2 {
+    padding-top: 4rem;
+}
+
 #nhmtours_overview_section img {
     vertical-align: bottom;
 }
 
-#nhmtours_myrole_section img {
-    max-width: 250px;
+#nhmtours_logo-design_section h2 {
+    padding-top: 4rem;
+}
+
+#nhmtours_logo-design_section .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 0;
+    /*    margin: 0;
+    flex-wrap: wrap; */
+}
+
+#nhmtours_logo-design_section .column_1 img {
+    max-width: 360px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#nhmtours_competitor-app_section h2 {
+#nhmtours_color-design_section {
+    padding-top: 0;    
+}
+
+#nhmtours_typography_section h2 {
+    padding-top: 4rem;
+}
+
+#nhmtours_typography_section .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-direction: column;
+}
+
+#nhmtours_typography_section .column {
+    display: flex;     
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+
+#nhmtours_typography_section .text-box_2 .text-box_4 {
+    display: flex;
+}
+
+#nhmtours_typography_section .text-box_1 img {
+    width: 30%;
+}
+
+#nhmtours_typography_section .text-box_2 img {
+    width: 8%;
+    margin-bottom: 30px;
+}
+
+#nhmtours_typography_section .text-box_3 img {
+    width: 14%;
+}
+
+#nhmtours_typography_section .text-box_4 img {
+    width: 55%;
+}
+
+#nhmtours_user-flows_section h2 {
+    padding-top: 4rem;
+}
+
+#nhmtours_user-flows_section .image-box {
+    padding-top: 25px;
+}
+
+#nhmtours_lowfi-wireframes_section h2 {
     margin-bottom: 0;
 }
 
-#nhmtours_competitor-app_section img {
-    max-width: 250px;
-    display: block;   
+#nhmtours_lowfi-wireframes_section h3 {
+    margin-top: 2rem;
 }
 
-#nhmtours_competitor-app_section .row {
-    margin: 0;
+#nhmtours_lowfi-wireframes_section .row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
 }
 
-#competitor-screen img {
-    margin-top: 4rem;
+#nhmtours_lowfi-wireframes_section .column {
+    display: inline-block;
+    width: 80%;
+    max-width: 220px;
 }
 
-#competitor-screen p {
-    margin-top: 4rem;
+#nhmtours_lowfi-wireframes_section p {
+    margin-top: 0;
+    text-align: center;
+}
+
+#nhmtours_midfi-wireframes_section h2 {
+    margin-bottom: 0;
 }
 
 #nhmtours_midfi-wireframes_section h3 {
-    padding-top: 4rem;
-    margin: 0;
+    padding-top: 2rem;
 }
 
 #nhmtours_midfi-wireframes_section .row {
@@ -632,52 +738,93 @@ nhmtours main styling
     text-align: center;
 }
 
-#nhmtours_mobile-gestures_section h2 {
-    margin-bottom: 0;    
-}
-
-#nhmtours_mobile-gestures_section h3 {
-    padding-top: 20px;    
-}
-
-#nhmtours_mobile-gestures_section .row {
-    margin-top: 0;
-    display: flex;  
-    justify-content: center;  
-    gap: 1rem;  
-}
-
-#nhmtours_mockups_section h2 {
+#nhmtours_prototype-test_section h2 {
     margin-bottom: 0;
 }
 
-#nhmtours_mockups_section h3 {
-    padding-top: 20px;
+#nhmtours_prototype-test_section h3 {
+    margin-top: 2rem;
 }
 
-#nhmtours_mockups_section .image-box {
+#nhmtours_prototype-test_section .arrow {
+    max-width: 60px;
+}
+
+#nhmtours_prototype-test_section .original {
+    max-width: 220px;
+    padding-right: 5px;
+}
+
+#nhmtours_prototype-test_section .revised {
+    max-width: 280px;
+    padding-left: 5px;
+}
+
+#nhmtours_prototype-test_section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    margin: 0;
+}
+
+#nhmtours_final-screens_section {
+    padding-bottom: 0rem;
+}
+
+#nhmtours_final-screens_section .container {
+    padding-bottom: 8rem;
+}
+
+#nhmtours_final-screens_section .image-box {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
-#nhmtours_mockups_section img {
+#nhmtours_final-screens_section img {
     display: inline-block;
     width: 80%;
     max-width: 220px;
 }
 
-#nhmtours_mockups-museum_section {
+#nhmtours_img-fullscreen_section_1 {
     padding-bottom: 0;  
 }
 
-#nhmtours_mockups-museum_section .container-fullscreen {
+#nhmtours_img-fullscreen_section_2 {
+    padding-bottom: 0;  
+}
+
+#nhmtours_img-fullscreen_section_3 {
+    padding-bottom: 0;  
+}
+
+#nhmtours_img-fullscreen_section .container-fullscreen {
     padding: 0;
 }
 
-#nhmtours_mockups-museum_section img {
+#nhmtours_img-fullscreen_section img {
     vertical-align: bottom;
 }
+
+#nhmtours_credits_section {
+    padding: 0;
+    position: relative;    
+}
+
+#nhmtours_credits_section img {
+    vertical-align: bottom;
+}
+
+#nhmtours_credits_section .button {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 
 /* ============================ 
 footer styling 
@@ -715,7 +862,7 @@ footer span {
 @media styling 
 ================================*/
 
-@media (max-width: 359px) {
+@media (max-width: 639px) {
     .button-box {
         flex-direction: column;
         align-items: center;
@@ -734,6 +881,16 @@ footer span {
     }
 
     #balance_logo-design_section .column_1 {
+        padding-left: 8%;
+        padding-right: 8%;  
+    }
+
+    #nhmtours_logo-design_section .row {
+        flex-direction: column;        
+        gap: 20px;        
+    }
+
+    #nhmtours_logo-design_section .column_1 {
         padding-left: 8%;
         padding-right: 8%;  
     }
@@ -756,9 +913,47 @@ footer span {
     #balance_typography_section .text-box_4 img {
         width: 25%;
     }
+
+    #nhmtours_typography_section .text-box_1 img {
+        width: 15%;
+    }
+    
+    #nhmtours_typography_section .text-box_2 img {
+        width: 4%;
+        margin-bottom: 45px;
+    }
+    
+    #nhmtours_typography_section .text-box_3 img {
+        width: 8%;
+    }
+    
+    #nhmtours_typography_section .text-box_4 img {
+        width: 25%;
+    }
 }
 
 @media (min-width: 640px){
+    
+    .button a{        
+        font-size: 2.2rem;        
+    }
+
+    h1, h2, h3 {    
+        padding-top: 4rem;
+    }
+    
+    h1 {    
+        font-size: 5.8rem; /* em would be relative to the body, use if you want to scale up proportionally. rem allows more control. */
+    }
+    
+    h2 {    
+        font-size: 3.6rem;       
+    }
+    
+    h3 {    
+        font-size: 2.8rem;
+    }
+       
     header {
         text-align: unset;
     }
@@ -787,6 +982,15 @@ footer span {
         margin: 0 auto;      
     }
 
+    #hero_section p {
+        padding-bottom: 4rem;
+        margin-bottom: 0;
+    }
+
+    #work_section h2 {
+        margin-bottom: 0;
+    }
+
     #work_section .row {
         display: flex;
         justify-content:space-between;
@@ -809,7 +1013,7 @@ footer span {
     #about_section .col-md-5 {
         width: 40%;
     }
-
+}
 
 /* ============================ 
 balance styling 
@@ -821,18 +1025,27 @@ balance styling
         margin-right: auto;
     }
 
+    #balance_overview_section h2 {
+        padding-top: 8rem;
+    }
+
     #balance_overview_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 8rem;
+    }
+
+    #balance_logo-design_section h2 {
+        padding-top: 8rem;
     }
 
     #balance_logo-design_section .column_1 {
-        width: 64%;
+        width: 48%;
     }
 
     #balance_logo-design_section .column_2 {
-        width: 32%;
+        width: 48%;
     }
 
     #balance_logo-design_section .container {
@@ -841,16 +1054,31 @@ balance styling
         margin-right: auto;
     }
 
+    #balance_logo-design_section .column_1 img {
+        max-width: 1000px;
+        display: flex;
+    }
+
+    #balance_color-design_section h2 {
+        padding-top: 8rem;
+    }
+
     #balance_color-design_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 8rem;
+    }
+
+    #balance_typography_section h2 {
+        padding-top: 8rem;
     }
 
     #balance_typography_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 8rem;
     }
 
     #balance_typography_section .row {
@@ -878,10 +1106,18 @@ balance styling
         width: 50%;
     }
 
+    #balance_user-flows_section h2 {
+        padding-top: 8rem;
+    }
+
     #balance_user-flows_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #balance_lowfi-wireframes_section h2 {
+        padding-top: 8rem;
     }
 
     #balance_lowfi-wireframes_section .container {
@@ -900,6 +1136,10 @@ balance styling
         max-width: 220px;
     }
 
+    #balance_midfi-wireframes_section h2 {
+        padding-top: 8rem;
+    }
+
     #balance_midfi-wireframes_section .container {
         max-width: 760px;
         margin-left: auto;
@@ -916,16 +1156,25 @@ balance styling
         max-width: 220px;
     }
 
+    #balance_prototype-test_section h2 {
+        padding-top: 8rem;
+    }
+
     #balance_prototype-test_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
     }
 
+    #balance_final-screens_section h2 {
+        padding-top: 8rem;
+    }
+
     #balance_final-screens_section .container {
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 16rem;
     }
 
     #balance_final-screens_section .image-box {
@@ -952,7 +1201,7 @@ balance styling
         margin-right: auto;
     }
 
-    /* ============================ 
+/* ============================ 
 nhmtours styling 
 ================================*/
 
@@ -962,22 +1211,89 @@ nhmtours styling
     margin-right: auto;
 }
 
+#nhmtours_overview_section h2 {
+    padding-top: 8rem;
+}
+
 #nhmtours_overview_section .container {
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 8rem;
 }
 
-#nhmtours_myrole_section .container {
+#nhmtours_logo-design_section h2 {
+    padding-top: 8rem;
+}
+
+#nhmtours_logo-design_section .column_1 {
+    width: 48%;
+}
+
+#nhmtours_logo-design_section .column_2 {
+    width: 48%;
+}
+
+#nhmtours_logo-design_section .container {
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#nhmtours_competitor-app_section .container {
+#nhmtours_logo-design_section .column_1 img {
+    max-width: 1000px;
+    display: flex;
+}
+
+#nhmtours_color-design_section h2 {
+    padding-top: 8rem;
+}
+
+#nhmtours_color-design_section .container {
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 8rem;
+}
+
+#nhmtours_typography_section h2 {
+    padding-top: 8rem;
+}
+
+#nhmtours_typography_section .container {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 8rem;
+}
+
+#nhmtours_typography_section .row {
+    flex-direction:unset;
+}
+
+#nhmtours_typography_section .column {
+    width: 48%;
+}
+
+#nhmtours_typography_section .text-box_1 img {
+    width: 30%;
+}
+
+#nhmtours_typography_section .text-box_2 img {
+    width: 8%;
+    margin-bottom: 0;
+}
+
+#nhmtours_typography_section .text-box_3 img {
+    width: 15%;
+}
+
+#nhmtours_typography_section .text-box_4 img {
+    width: 50%;
+}
+
+#nhmtours_user-flows_section h2 {
+    padding-top: 8rem;
 }
 
 #nhmtours_user-flows_section .container {
@@ -986,65 +1302,28 @@ nhmtours styling
     margin-right: auto;
 }
 
-#nhmtours_midfi-wireframes_section .container {
+#nhmtours_lowfi-wireframes_section h2 {
+    padding-top: 8rem;
+}
+
+#nhmtours_lowfi-wireframes_section .container {
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#nhmtours_background-research_section .container {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
+#nhmtours_lowfi-wireframes_section .row {
+    display: flex;
+    justify-content: space-between;
 }
 
-#nhmtours_mobile-gestures_section .container {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
+#nhmtours_lowfi-wireframes_section .column {
+    width: 70%;
+    max-width: 220px;
 }
 
-#nhmtours_prototype-testing_section .container {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nhmtours_mockups_section .container {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nhmtours_mockups-museum_section .container {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nhmtours_disclaimer_section .container {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nhmtours_credits_section .container {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nhmtours_competitor-app_section .row {
-    display: flex;   
-    justify-content: space-between;    
-}
-
-#nhmtours_competitor-app_section .column_1 {
-    width: 40%;
-}
-
-#nhmtours_competitor-app_section .column_2 {
-    width: 60%;
+#nhmtours_midfi-wireframes_section h2 {
+    padding-top: 8rem;
 }
 
 #nhmtours_midfi-wireframes_section .container {
@@ -1063,24 +1342,49 @@ nhmtours styling
     max-width: 220px;
 }
 
-#nhmtours_mockups_section .container {
+#nhmtours_prototype-test_section h2 {
+    padding-top: 8rem;
+}
+
+#nhmtours_prototype-test_section .container {
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#nhmtours_mockups_section .image-box {
+#nhmtours_final-screens_section h2 {
+    padding-top: 8rem;
+}
+
+#nhmtours_final-screens_section .container {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16rem;
+}
+
+#nhmtours_final-screens_section .image-box {
     display: flex;
     justify-content: space-between;
     margin: 0;
     flex-wrap: wrap;
 }
 
-#nhmtours_mockups_section img {
-    width: 15%;
-    max-width: 100px;
+#nhmtours_final-screens_section img {
+    width: 35%;
+    max-width: 180px;
 }
 
+#nhmtours_img-fullscreen_section .container {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nhmtours_credits_section .container {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ============================ 
